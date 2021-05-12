@@ -1,0 +1,264 @@
+//Variables
+
+$primary:       #5B4181;
+$secondary:     #020005;
+$info:          #F5B842;
+$warning:       #E35059;
+$light:         #FFFFFF;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$font-size-root: 14px;
+
+$grid-gutter-width:          0;
+$border-color:  $gray-300;
+
+// Globals
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Header */
+
+//Container promo first Menu
+
+.wrap--container--promo{
+  font-size: 12px;
+  background-color: $secondary;
+}
+.wrap--container-search--menu {
+  font-size: 14px;
+  background-color: $primary;
+}
+
+.container{
+  color: $light;
+}
+
+//Menu 2 - Search Menu
+
+.logo--header{
+  width: 50px;
+}
+
+.navbar--icon--search {
+  position: absolute;
+  top: 10px;
+}
+
+.main--menu--nav .input-group-append {
+  background-color: $light;
+}
+
+
+.main--menu--nav .input-group .input-group-append {
+  border: none;
+}
+
+.main--menu--nav .input-group-append .btn-outline-secondary {
+  border: none;
+  color: $primary;
+}
+
+.colombia--logo {
+  width: 12px;
+}
+
+.navbar--logo {
+  width: 20px;
+  height: 20px;
+}
+//Dropdown
+
+.container--dropwdow {
+  width: 600px;
+}
+
+.dropdown-menu.show {
+  background-color: $primary;
+  border: none;
+}
+
+.background--toggle-menu {
+  background-color: $primary;
+  color: $light;
+}
+
+.promo--dropdown {
+  width: 250px;
+}
+
+//Button  laika member
+
+.btn--laika--member {
+  background: linear-gradient(
+    180deg, 
+    rgba(245,184,66,1) 25%, 
+    rgba(244,164,10,1) 63%, 
+    rgba(235,163,23,1) 100%);
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  color: $primary;
+  font-weight: 900;
+}
+
+.laika--member {
+  font-weight: 900;
+  color: $info;
+}
+
+/* Main */
+//Cover hero img
+
+.cover--img {
+  border-radius: 5px;
+}
+
+//Sections products and brands
+
+.titles--main {
+  font-size: 16px;
+  font-weight:700;
+  color: $primary;
+}
+
+.category--items {
+  border: 1px solid $gray-400;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 1px $gray-300;
+  background-color: $light;
+  width: 150px;
+  height: 50px;
+  font-size: 12px;
+}
+
+.category--text--button {
+  font-weight: 900;
+}
+
+.category--icon--format {
+  color: $primary;
+}
+
+.wraper-brand-img {
+  width: 120px;
+  height: 120px;
+  box-shadow: 1px 1px 10px $primary;
+  border-radius: 50%;
+}
+
+.brand--img {
+  width: 80px;
+}
+
+//Product cards
+
+.card .card-img-top {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text--title--product {
+  color: $secondary;
+}
+
+.text--title--price {
+  color: $secondary;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.offer--annouce {
+  background-color: $info;
+  position: absolute;
+  padding: 20px;
+  border-radius: 50%;
+  top: 10px;
+  left: 210px;
+  color: $light;
+}
+
+//Footer
+
+
+.links--footer--titles{
+  font-size: 14px;
+  color: $primary;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+
+.logo--footer{
+  width: 100px;
+}
+.text--social--footer p:nth-child(1){
+  font-size: 10px;
+  color: $primary;
+}
+
+.text--social--footer p:nth-child(2){
+  font-size: 20px;
+  color: $primary;
+  margin-bottom: 0;
+}
+
+.wrapper--brand .svg-inline--fa {
+  color: $primary;
+}
+
+.footer--suscribe--p {
+  color: $secondary;
+}
+
+.footer--sign {
+  color: $secondary;
+  border-top: 1px solid $gray-400;
+}
+
+/* Media querys */
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) { 
+  .wrap--container {
+    font-size: 10px;
+  }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+ .wrap--container--promo {
+   font-size: 9px;
+ }
+ .btn--laika--member {
+  padding: 6px;
+  font-size: 9px;
+  }
+
+  .laika--member {
+  font-size: 12px;
+  }
+
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
